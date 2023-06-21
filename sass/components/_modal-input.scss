@@ -1,0 +1,18 @@
+.main-section_input {
+  width: 448px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: transparent;
+  &:hover,
+  &:focus-within {
+    border: getColor('primary');
+    border-radius: 4px;
+  }
+}
+.main-section_svg {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+}

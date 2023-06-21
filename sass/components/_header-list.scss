@@ -1,0 +1,26 @@
+.page-header_list-1 {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+}
+.page-header_mail {
+  text-decoration: none;
+  color: getColor('back');
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: getColor('transition-duration');
+  transition-timing-function: getColor('transition-timing-function');
+  &:hover,
+  &:focus {
+    color: getColor('primary');
+  }
+}
+.page-header_item {
+  margin-right: 10px;
+  fill: currentColor;
+}

@@ -1,0 +1,31 @@
+.page-header_link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: getColor('transition-duration');
+  transition-timing-function: getColor('transition-timing-function');
+  &:hover,
+  &:focus {
+    color: getColor('primary');
+  }
+  &.page-header_wrap {
+    color: getColor('primary');
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: -33px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 4px;
+      background: getColor('primary');
+      border-radius: 2px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.photos_image {
+  position: relative;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  mix-blend-mode: normal;
+}
+.photos_text {
+  position: absolute;
+  bottom: 0px;
+  color: getColor('text');
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03e;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  background: getColor('box');
+}

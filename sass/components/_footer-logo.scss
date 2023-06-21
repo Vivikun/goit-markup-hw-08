@@ -1,0 +1,20 @@
+.footer-page_logo {
+  font-family: 'Raleway';
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: getColor('text');
+  transition-property: color;
+  transition-duration: getColor('transition-duration');
+  transition-timing-function: getColor('transition-timing-function');
+  &:focus,
+  &:hover {
+    color: getColor('primary');
+  }
+}
+
+.footer-page_web {
+  color: getColor('primary');
+}

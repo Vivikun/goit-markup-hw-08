@@ -1,0 +1,24 @@
+$colors: (
+  'primary': #2196f3,
+  'back': #757575,
+  'text': #ffffff,
+  'box': rgb(47, 48, 58),
+  'body': #212121,
+  'image': #f5f5fa,
+  'mine': #e6e6e6,
+  'mail': #ffffff99,
+  'line': #ededed,
+  'none': #000000,
+  'border': #eeeeee,
+  'icone': #afb1b8,
+  'icone-background': #f5f4fa,
+  'bacgound-footer': rgba(255, 255, 255, 0.102),
+  'transition-timing-function': cubic-bezier(0.4, 0, 0.2, 1),
+  'transition-duration': 250ms,
+  'window-modal-background': rgba(0, 0, 0, 0.2),
+  'window-modal-border': rgba(33, 33, 33, 0.2),
+  'modal-Required-fields': #ff0000,
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

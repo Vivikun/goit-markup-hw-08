@@ -1,0 +1,15 @@
+.address-footer_mail {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: getColor('mail');
+  transition-property: color;
+  transition-duration: getColor('transition-duration');
+  transition-timing-function: getColor('transition-timing-function');
+  &:hover,
+  &:focus {
+    color: getColor('primary');
+  }
+}

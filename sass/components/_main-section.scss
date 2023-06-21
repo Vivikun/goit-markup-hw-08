@@ -1,0 +1,30 @@
+.main-section {
+  background-color: getColor('box');
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Tapeta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  max-height: 600px;
+  margin: 0 auto;
+}
+.main-section_headline {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  max-width: 696px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: getColor('text');
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: none;
+  font-weight: 700;
+}

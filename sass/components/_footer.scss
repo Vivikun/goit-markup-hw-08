@@ -1,0 +1,9 @@
+.footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: getColor('box');
+}
+.footer-page_div {
+  display: flex;
+  align-items: baseline;
+}

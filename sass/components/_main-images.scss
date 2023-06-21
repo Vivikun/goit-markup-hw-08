@@ -1,0 +1,11 @@
+.main-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+.main-images_list {
+  position: relative;
+  max-width: 370px;
+  max-height: 404px;
+}

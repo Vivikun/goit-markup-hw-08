@@ -1,0 +1,26 @@
+.footer-social_list {
+  display: flex;
+  gap: 10px;
+}
+.footer-social_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: getColor('bacgound-footer');
+  fill: getColor('text');
+  transition-property: color, background;
+  transition-duration: getColor('transition-duration');
+  transition-timing-function: getColor('transition-timing-function');
+  &:hover,
+  &:focus {
+    background: getColor('primary');
+    border-radius: 50%;
+    fill: getColor('text');
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}

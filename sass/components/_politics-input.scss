@@ -1,0 +1,15 @@
+.main-section-politics_input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 15px;
+}
+.main-section-politics_input:checked ~ .main-section-politics_svg {
+  visibility: visible;
+  background-color: getColor('primary');
+  scale: 1;
+}
+.checkbox-hidden:checked ~ .main-section-politics_svg-1 {
+  scale: 0;
+}

@@ -1,0 +1,28 @@
+.lorem-ipsum {
+  display: flex;
+  gap: 30px;
+  &_headline {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &_text {
+    color: getColor('back');
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+  &_icone {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background: getColor('icone-bacground');
+    border-radius: 4px;
+  }
+}

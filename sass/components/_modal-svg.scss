@@ -1,0 +1,16 @@
+.main-section-politics_svg {
+  position: absolute;
+  fill: getColor('text');
+  border-radius: 2px;
+  visibility: hidden;
+  transition-property: background-color, visibility;
+  transition-duration: getColor('transition-duration');
+  transition-timing-function: getColor('transition-timing-function');
+  scale: 0;
+  z-index: 1;
+}
+.main-section-politics_svg-1 {
+  position: absolute;
+  scale: 1;
+  transition: scale, 0.2s;
+}

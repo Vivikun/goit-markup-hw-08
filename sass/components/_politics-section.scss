@@ -1,0 +1,19 @@
+.main-section_politics {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: getColor('back');
+  gap: 8px;
+}
+.main-section-politics_link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: getColor('primary');
+  text-decoration: underline;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,18 @@
+.marketing-description-icon_svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: getColor('icone');
+  border-radius: 50%;
+  transition-property: fill, background;
+  transition-property: fill, background;
+  transition-duration: getColor('transition-duration');
+  transition-timing-function: getColor('transition-timing-function');
+  &:hover,
+  &:focus {
+    background: getColor('primary');
+    fill: getColor('text');
+  }
+}

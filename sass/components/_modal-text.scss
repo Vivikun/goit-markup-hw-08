@@ -1,0 +1,36 @@
+.main-section_text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid getColor('body');
+  border-radius: 4px;
+  margin-top: 4px;
+  padding: 12px 16px;
+  resize: none;
+  outline: transparent;
+  transition-property: border;
+  transition-duration: getColor('transition-duration');
+  transition-timing-function: getColor('transition-timing-function');
+  &:focus-within,
+  &:hover {
+    border: 1px solid getColor('primary');
+  }
+}
+.main-section_label {
+  position: relative;
+  margin-top: 4px;
+  border: 1px solid #21212133;
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--animation);
+  &:hover,
+  &:focus-within {
+    border: 1px solid getColor('primary');
+    border-radius: 4px;
+    fill: getColor('primary');
+  }
+  &:required,
+  :invalid {
+    color: getColor('modal-Required-fields');
+  }
+}

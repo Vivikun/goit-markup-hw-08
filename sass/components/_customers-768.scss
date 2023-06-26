@@ -1,0 +1,37 @@
+.customers {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor('body');
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+.customers_list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  .customers_item {
+    width: 226px;
+    height: 92px;
+    border: 1px solid getColor('icone');
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: getColor('icone');
+    transition-property: fill, border-color;
+    transition-duration: getColor('transition-duration');
+    transition-timing-function: getColor('transition-timing-function');
+    &:hover,
+    &:focus {
+      border-color: getColor('primary');
+      fill: getColor('primary');
+    }
+  }
+}

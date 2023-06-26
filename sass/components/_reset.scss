@@ -9,7 +9,7 @@ p {
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -28,6 +28,28 @@ address {
 }
 
 section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include deteskop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+body {
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+.container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include tablet {
+    max-width: 768px;
+  }
+  @include deteskop {
+    max-width: 1200px;
+  }
 }

@@ -1,5 +1,9 @@
 .photos {
   padding-top: 0;
+  display: none;
+  @include deteskop {
+    display: block;
+  }
 }
 .photos_headline {
   font-weight: 700;

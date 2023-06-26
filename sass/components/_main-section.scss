@@ -1,23 +1,44 @@
 .main-section {
   background-color: getColor('box');
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Tapeta.jpg);
+    url(/./images/header-460.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1600px;
-  max-height: 600px;
+  max-width: 480px;
+  max-height: 400px;
   margin: 0 auto;
+
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/./images/768-tło.jpg);
+    max-width: 768px;
+    max-height: 400px;
+  }
+
+  @include deteskop {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/./images/Tapeta.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    max-height: 600px;
+  }
 }
 .main-section_headline {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.4;
-  max-width: 696px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -26,5 +47,13 @@
   margin: 0 auto;
   margin-bottom: 30px;
   border: none;
-  font-weight: 700;
+  display: flex;
+  width: 365px;
+  flex-direction: column;
+
+  @include deteskop {
+    font-size: 44px;
+    width: 696px;
+    display: block;
+  }
 }

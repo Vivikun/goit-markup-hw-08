@@ -2,6 +2,18 @@
   display: flex;
   gap: 50px;
   margin-left: auto;
+
+  display: none;
+  @include tablet {
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+  }
+  @include deteskop {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+  }
 }
 .page-header_mail {
   text-decoration: none;

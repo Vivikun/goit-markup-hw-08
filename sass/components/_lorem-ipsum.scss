@@ -1,6 +1,8 @@
 .lorem-ipsum {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+
   &_headline {
     font-weight: 700;
     font-size: 14px;
@@ -8,6 +10,13 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @include tablet {
+      width: 354px;
+    }
+    @include deteskop {
+      width: 270px;
+    }
   }
   &_text {
     color: getColor('back');
@@ -15,6 +24,13 @@
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.03em;
+
+    @include tablet {
+      width: 354px;
+    }
+    @include deteskop {
+      width: 270px;
+    }
   }
   &_icone {
     height: 120px;
@@ -22,7 +38,14 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    background: getColor('icone-bacground');
+    background: getColor('icone-background');
     border-radius: 4px;
+
+    @include tablet {
+      width: 354px;
+    }
+    @include deteskop {
+      width: 270px;
+    }
   }
 }

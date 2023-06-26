@@ -1,7 +1,16 @@
 .page-header {
   border-bottom: 1px solid getColor('line');
+  &_mine {
+    display: flex;
+    align-items: center;
+  }
 }
-.page-header_mine {
-  display: flex;
-  align-items: center;
+.page-header_svg {
+  margin-left: auto;
+  @include deteskop {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
 }

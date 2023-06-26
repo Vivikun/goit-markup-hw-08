@@ -6,11 +6,46 @@
   letter-spacing: 0.03em;
   color: getColor('body');
   margin-bottom: 50px;
+
+  @include tablet {
+    margin-top: 60px;
+  }
 }
 .customers_list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
   &:not(:last-child) {
     margin-right: 30px;
+  }
+}
+.customers_item {
+  width: 210px;
+  max-width: 100%;
+  height: 92px;
+  border: 1px solid getColor('icone');
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: getColor('icone');
+  transition-property: fill, border-color;
+  transition-duration: getColor('transition-duration');
+  transition-timing-function: getColor('transition-timing-function');
+
+  /*@include tablet {
+    width: 226px;
+    max-width: 100%;
+  }
+  @include deteskop {
+    width: 170px;
+
+    max-width: 100%;
+  }*/
+
+  &:hover,
+  &:focus {
+    border-color: getColor('primary');
+    fill: getColor('primary');
   }
 }

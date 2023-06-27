@@ -6,7 +6,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/header-460.jpg);
+    url(../images/header-460.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 480px;
@@ -20,7 +20,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/480-tłox2.jpg);
+      url(./../images/480-tłox2.jpg);
   }
 
   @include tablet {
@@ -28,7 +28,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/768-tło.jpg);
+      url(../images/768-tło.jpg);
     max-width: 768px;
     max-height: 400px;
 
@@ -39,7 +39,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/768-tłox2.jpg);
+        url(./../images/768-tłox2.jpg);
     }
   }
 
@@ -48,7 +48,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/Tapeta.jpg);
+      url(../images/Tapeta.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
@@ -61,7 +61,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/Tapeta2x.jpg);
+        url(./../images/Tapeta2x.jpg);
     }
   }
 

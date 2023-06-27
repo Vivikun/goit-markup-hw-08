@@ -33,7 +33,7 @@
   transition-duration: getColor('transition-duration');
   transition-timing-function: getColor('transition-timing-function');
 
-  /*@include tablet {
+  @include tablet {
     width: 226px;
     max-width: 100%;
   }
@@ -41,7 +41,7 @@
     width: 170px;
 
     max-width: 100%;
-  }*/
+  }
 
   &:hover,
   &:focus {

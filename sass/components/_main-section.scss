@@ -6,21 +6,41 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/./images/header-460.jpg);
+    url(../images/header-460.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 480px;
   max-height: 400px;
   margin: 0 auto;
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-460@2x.jpg);
+  }
+
   @include tablet {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/./images/768-tło.jpg);
+      url(../images/768-tło.jpg);
     max-width: 768px;
     max-height: 400px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/768-tło@2x.jpg);
+    }
   }
 
   @include deteskop {
@@ -28,13 +48,24 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/./images/Tapeta.jpg);
+      url(../images/Tapeta.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
     max-height: 600px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/Tapeta@2x.jpg);
+    }
   }
 }
+
 .main-section_headline {
   font-weight: 900;
   font-size: 26px;

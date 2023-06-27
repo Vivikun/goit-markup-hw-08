@@ -4,6 +4,10 @@
   appearance: none;
   width: 16px;
   height: 15px;
+  margin-right: 8px;
+  @include deteskop {
+    margin-right: 0;
+  }
 }
 .main-section-politics_input:checked ~ .main-section-politics_svg {
   visibility: visible;

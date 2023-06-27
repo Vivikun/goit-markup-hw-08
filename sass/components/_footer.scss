@@ -5,5 +5,30 @@
 }
 .footer-page_div {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+
+  @include deteskop {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+    justify-content: inherit;
+    text-align: inherit;
+    flex-wrap: inherit;
+  }
+}
+.footer-social {
+  text-align: center;
+}
+.footer-social_headline {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: getColor('text');
+  margin-bottom: 20px;
 }

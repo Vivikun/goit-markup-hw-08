@@ -5,7 +5,16 @@
     align-items: center;
   }
 }
-.page-header_svg {
+.page-header_button {
+  margin-left: auto;
+  background-color: getColor('text');
+  border: 0;
+  fill: getColor('body');
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: getColor('primary');
+  }
   margin-left: auto;
   @include deteskop {
     display: none;

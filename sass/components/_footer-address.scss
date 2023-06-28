@@ -1,6 +1,11 @@
 .address-footer {
   margin-top: 20px;
+  text-align: center;
+  @include deteskop {
+    text-align: left;
+  }
 }
 .address-footer_list {
   list-style: none;
+  margin-bottom: 60px;
 }

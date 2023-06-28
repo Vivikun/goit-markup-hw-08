@@ -12,6 +12,9 @@
   color: getColor('text');
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
+  margin: 0 auto;
+  margin-top: 20px;
   cursor: pointer;
   fill: getColor('text');
   transition-property: fill, color;
@@ -21,6 +24,9 @@
   &:focus {
     color: getColor('body');
     fill: getColor('body');
+  }
+  @include deteskop {
+    margin: 0;
   }
 }
 .footer-from-button_svg {

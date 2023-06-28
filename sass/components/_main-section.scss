@@ -20,7 +20,8 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./../images/480-tłox2.jpg);
+      url(../../images/480-tło@2x.jpg);
+    background-size: cover;
   }
 
   @include tablet {
@@ -39,7 +40,8 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(./../images/768-tłox2.jpg);
+        url(../../images/768-tło@2x.jpg);
+      background-size: cover;
     }
   }
 
@@ -61,7 +63,8 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(./../images/Tapeta2x.jpg);
+        url(../../images/Tapeta@2x.jpg);
+      background-size: cover;
     }
   }
 
@@ -78,12 +81,12 @@
     margin-bottom: 30px;
     border: none;
     display: flex;
-    width: 365px;
+    max-width: 365px;
     flex-direction: column;
 
     @include deteskop {
       font-size: 44px;
-      width: 696px;
+      max-width: 696px;
       display: block;
     }
   }

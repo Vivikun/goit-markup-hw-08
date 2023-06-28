@@ -1,8 +1,13 @@
-.main-list {
+.primary {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-left: 25px;
+  gap: 302px;
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 25px;
+  }
   &_link {
     color: getColor('body');
     font-size: 40px;
@@ -15,12 +20,13 @@
     }
   }
 }
-.main-address {
+
+.primary-address {
   display: flex;
   flex-direction: column;
-  margin-top: 302px;
   gap: 32px;
   padding-left: 25px;
+
   &_link {
     color: getColor('primary');
     font-size: 34px;
@@ -35,6 +41,9 @@
     font-weight: 500;
     letter-spacing: 0.48px;
   }
+}
+.modal-header {
+  max-height: 796px;
 }
 
 .modal-header_button {

@@ -1,7 +1,5 @@
 .footer-from {
   @include deteskop {
-    width: 570px;
-    height: 86px;
     margin-left: 8px;
   }
 }
@@ -10,7 +8,11 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-transform: uppercas;
+  text-transform: uppercase;
   color: getColor('text');
   margin-bottom: 24px;
+  text-align: center;
+  @include deteskop {
+    text-align: left;
+  }
 }

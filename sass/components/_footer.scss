@@ -4,24 +4,21 @@
   background-color: getColor('box');
 }
 .footer-page_div {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 60px;
 
   @include deteskop {
     display: flex;
     gap: 70px;
-    align-items: baseline;
-    justify-content: inherit;
-    text-align: inherit;
-    flex-wrap: inherit;
   }
 }
 .footer-social {
   text-align: center;
+  margin-bottom: 60px;
+  @include deteskop {
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 .footer-social_headline {
   font-weight: 700;

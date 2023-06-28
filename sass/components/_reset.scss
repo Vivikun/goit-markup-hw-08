@@ -52,4 +52,7 @@ body {
   @include deteskop {
     max-width: 1200px;
   }
+  @include ipod {
+    max-width: 460px;
+  }
 }

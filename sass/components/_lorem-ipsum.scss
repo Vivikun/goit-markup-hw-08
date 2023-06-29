@@ -13,9 +13,11 @@
     text-align: center;
     @include tablet {
       width: 354px;
+      text-align: left;
     }
     @include deteskop {
       width: 270px;
+      text-align: left;
     }
   }
   &_text {

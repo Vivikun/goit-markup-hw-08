@@ -281,7 +281,7 @@
 .footer-page {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: rgb(47, 48, 58);
+  background-color: #2f303a;
 }
 
 .footer-page_div {
@@ -373,7 +373,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background: rgb(47, 48, 58);
+  background: #2f303a;
   margin-right: 0;
   color: #ffffff;
   font-weight: 400;
@@ -593,11 +593,13 @@
 @media screen and (min-width: 768px) {
   .lorem-ipsum_headline {
     width: 354px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
   .lorem-ipsum_headline {
     width: 270px;
+    text-align: left;
   }
 }
 .lorem-ipsum_text {
@@ -651,7 +653,7 @@
 }
 
 .main-section {
-  background-color: rgb(47, 48, 58);
+  background-color: #2f303a;
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-460.jpg);
@@ -984,7 +986,7 @@
   justify-content: center;
   width: 370px;
   height: 70px;
-  background: rgb(47, 48, 58);
+  background: #2f303a;
 }
 
 .photos {
@@ -1162,7 +1164,23 @@ body {
   margin-right: 10px;
 }
 
+.modal-header.is-open {
+  transform: translateX(0);
+}
+
+.modal-header {
+  position: fixed;
+  background-color: #ffffff;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  padding-left: 40px;
+}
+
 .primary {
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
   gap: 302px;
@@ -1171,7 +1189,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-left: 25px;
 }
 .primary_link {
   color: #212121;
@@ -1188,7 +1205,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding-left: 25px;
+  margin-top: auto;
+  margin-bottom: 64px;
 }
 .primary-address_link {
   color: #2196f3;
@@ -1205,15 +1223,13 @@ body {
   letter-spacing: 0.48px;
 }
 
-.modal-header {
-  max-height: 796px;
-}
-
 .modal-header_button {
   fill: #212121;
+  background-color: #ffffff;
   margin-left: auto;
-  display: block;
+  margin-right: 15px;
   margin-top: 10px;
+  border: none;
   max-width: 40px;
   max-height: 40px;
 }
@@ -1228,7 +1244,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 64px;
+  margin-bottom: 48px;
 }
 .footer-list_logo {
   color: #2196f3;

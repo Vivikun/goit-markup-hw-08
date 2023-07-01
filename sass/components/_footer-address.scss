@@ -8,4 +8,7 @@
 .address-footer_list {
   list-style: none;
   margin-bottom: 60px;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }

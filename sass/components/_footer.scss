@@ -6,7 +6,11 @@
 .footer-page_div {
   flex-wrap: wrap;
   gap: 60px;
-
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
   @include deteskop {
     display: flex;
     gap: 70px;
@@ -15,6 +19,9 @@
 .footer-social {
   text-align: center;
   margin-bottom: 60px;
+  @include tablet {
+    margin-bottom: 0;
+  }
   @include deteskop {
     text-align: left;
     margin-bottom: 0;

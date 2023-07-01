@@ -14,13 +14,17 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: getColor('box');
-  margin-right: 0;
+
   color: getColor('text');
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
-
+  @include tablet {
+    width: 450px;
+    margin: 0 auto;
+    display: block;
+  }
   @include deteskop {
     width: 358px;
   }
